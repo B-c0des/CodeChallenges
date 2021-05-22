@@ -1,0 +1,5 @@
+function duplicateEncode(word){
+let arr = word.toLowerCase().split('')
+for (var i =0; i< word.length; i++){
+  word.toLowerCase().split('').indexOf(word.toLowerCase()[i], (word.toLowerCase().indexOf(arr[i]) + 1)) === -1?arr[i] = '(': arr[i] = ')' }
+return arr.join('') }
