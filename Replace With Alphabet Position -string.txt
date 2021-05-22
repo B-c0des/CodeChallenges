@@ -1,0 +1,6 @@
+function alphabetPosition(text) {
+  let abc = 'abcdefghijklmnopqrstuvwxyz'
+  let str = text.toLowerCase().replace(/[^a-zA-Z]+/g, '').split('')
+  return str.map(x => abc.indexOf(x)+1).join(' ')
+}
+

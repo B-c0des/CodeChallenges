@@ -1,0 +1,5 @@
+function spinWords(string){
+ const str = string.toString().replace(/,/g, ' ')
+  return str.includes(' ') && (str.length > 4) ? str.split(' ').map(x => x.length > 4?
+ x.split('').reverse('').join('') : x).join(' ') : str.split('').reverse().join('')
+}

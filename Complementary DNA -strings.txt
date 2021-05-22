@@ -1,0 +1,24 @@
+function DNAStrand(dna){
+let letterArr = dna.split("")
+return letterArr
+.map(target => {
+//for( var i = 0; i < str.length; i++){
+  
+switch(target){
+case "A": return "T"
+break;
+case "T": return "A"
+break;
+case "C": return "G"
+break;
+case "G": return "C"
+break;
+
+default:
+return target
+break;
+}
+
+}
+).join('')
+}
