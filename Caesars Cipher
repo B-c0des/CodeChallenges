@@ -1,0 +1,27 @@
+function rot13(str) 
+
+//encode alpha
+let encode = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+//decode alpha
+let decode = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm
+
+//create an empty array
+let answer = []
+
+//create a for loop
+for(let i = 0; i < str.length;i++){
+
+//get the index of the encoded letter
+  let index = encode.indexOf(str[i
+  
+  //create turnary to push either an empty string or a string with a value
+  //get the index of the decoded letter and push it to the empty array named 
+  decode[index] !== undefined ? answer.push(decode[index]) : answer.push(' ')
+  
+}
+
+//return answer and join
+return answer.join('')
+
+}
