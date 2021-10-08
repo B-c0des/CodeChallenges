@@ -1,0 +1,17 @@
+  function removeChar(str){
+  //Parameter - Function returns a string.
+  //Return - 'eloquent' Returns 'loquent'
+
+  //Example - Need to turn into an array using split method to use slice function
+  // use slice method that uses two parameters
+  // the first slice parameter is the first index which 
+  // returns the value from that index
+  // to the next index specified with a second parameter
+  // index at 1 for the first parameter
+  // index at length -1 for second parameter
+  // join method to turn back into a string with empty delimiter
+  // return joined string
+
+  //Psuedo Code - split('')  ,  slice(1, str.lenth -1) , .join('')
+
+  return str.split('').slice(1,str.length-1).join('')
