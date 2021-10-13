@@ -1,0 +1,7 @@
+function getAverage(marks){
+let total = 0
+for (let tally in marks) {
+  total += marks[tally];
+}
+return Math.floor(total/marks.length) 
+}
