@@ -1,0 +1,16 @@
+function evenNumbers(array, number) {
+
+// declare empty aray
+  let myArr = []
+  
+  //loop through array
+  for( let i = 0; i < array.length ; i ++){
+  
+  //Find if index of array is divisible by 2. If so, use a turnary conditional ES6 Syntax, and add it to empty myArr using push method, else it is an odd number.
+    array[i] % 2 === 0 ? myArr.push(array[i]) : 'Odd Number'
+  }
+  
+  //return array and splice from total  length minus number; to the last index, to select the last of the numbers.
+  return myArr.splice(myArr.length - number,array.length)
+  
+}
